@@ -195,7 +195,7 @@ header span {
     margin-right: auto;
 }
 
-.about-social a {
+.about-social p {
     text-decoration: none;
     font-family: Roboto Mono;
     font-size: 16px;
@@ -204,7 +204,7 @@ header span {
     transition: color 0.2s ease;
 }
 
-.about-social a:hover {
+.about-social p:hover {
     color: rgb(213, 247, 21);
 }
 
