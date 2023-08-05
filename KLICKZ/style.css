@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+
+
+
+
+
+/* Basic styles of the html page */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 2px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* Navigation bar */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: fixed;
+    padding: 12px 0px;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(170, 133, 255, 0.8), rgba(253, 71, 177, 0.8));
+    backdrop-filter: blur(6px);
+    z-index: 10;
+    cursor: default;
+}
+
+header span {
+    margin-left: 15%;
+    color: rgb(255, 255, 255);
+    font-family: Roboto Condensed;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+/* home */
+
+.home-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title-and-caption {
+    grid-area: main-title-and-caption;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(255, 65, 128, 0.8), rgba(130, 76, 255, 0.8));
+    backdrop-filter: blur(6px);
+    padding: 30px 50px;
+    border-radius: 50px 10px;
+    margin: 0px 40px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    animation: main-title-and-caption-animation 1s ease;
+}
+
+@keyframes main-title-and-caption-animation {
+    0% {transform: translateY(-100px); opacity: 0;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+.main-title-and-caption h1 {
+    font-family: Roboto;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    border-bottom: solid 2px white;
+    padding-bottom: 10px;
+}
+
+.main-title-and-caption h2 {
+    font-family: Roboto Condensed;
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* About */
+
+.about-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 80px;
+}
+
+.about-me {
+    padding-top: 100px;
+}
+
+.about-me span {
+    font-family: Roboto;
+    font-size: 30px;
+    padding: 35px 40px;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+}
+
+.about-tab {
+    background: linear-gradient(45deg, rgba(193, 60, 255, 0.8), rgba(87, 146, 255, 0.8));
+    backdrop-filter: blur(6px);
+    padding: 25px 40px;
+    border-radius: 50px 10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    max-width: 800px;
+    margin: 0px 40px;
+    display: grid;
+    grid-template-areas:
+    "about-a about-a"
+    "about-b about-c"
+    "about-b about-d";
+    grid-gap: 30px 30px;
+}
+
+.about-tab img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: about-b;
+    border-radius: 20px;
+}
+
+.about-tab span {
+    font-family: Roboto;
+    font-size: 24px;
+    color: white;
+    grid-area: about-a;
+}
+
+.about-tab p, .about-tab p span {
+    font-family: Roboto Condensed;
+    font-size: 19px;
+    line-height: 30px;
+    color: rgb(228, 228, 228);
+    grid-area: about-c;
+}
+
+.about-tab-desc p span {
+    color: rgb(9, 15, 46);
+    text-decoration: none;
+}
+
+.about-social {
+    grid-area: about-d;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-social p {
+    text-decoration: none;
+    font-family: Roboto Mono;
+    font-size: 16px;
+    color: black;
+    padding: 5px;
+    transition: color 0.2s ease;
+}
+
+@media screen and (max-width: 900px) {
+    .about-tab {
+        grid-template-areas:
+        "about-a"
+        "about-b"
+        "about-c"
+        "about-d";
+        max-width: 600px;
+    }
+    .about-tab span {
+        text-align: center;
+    }
+    .about-tab p {
+        text-align: center;
+    }
+    .about-social {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}
