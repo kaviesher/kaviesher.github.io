@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 
 
@@ -82,7 +82,7 @@ header span {
     flex-direction: column;
     background: linear-gradient(45deg, rgba(255, 65, 128, 0.8), rgba(130, 76, 255, 0.8));
     backdrop-filter: blur(6px);
-    padding: 30px 50px;
+    padding: 32px 50px;
     border-radius: 50px 10px;
     margin: 0px 40px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
@@ -95,17 +95,17 @@ header span {
 }
 
 .main-title-and-caption h1 {
-    font-family: Roboto;
-    font-size: 50px;
+    font-family: Josefin Sans;
+    font-size: 46px;
     color: white;
     text-align: center;
-    border-bottom: solid 2px white;
+    border-bottom: solid 3px white;
     padding-bottom: 10px;
 }
 
 .main-title-and-caption h2 {
     font-family: Roboto Condensed;
-    margin-top: 20px;
+    margin-top: 18px;
     color: white;
     font-size: 25px;
     text-align: center;
@@ -181,12 +181,37 @@ header span {
     font-size: 19px;
     line-height: 30px;
     color: rgb(228, 228, 228);
+}
+
+.about-tab-desc {
     grid-area: about-c;
 }
 
 .about-tab-desc p span {
     color: rgb(9, 15, 46);
     text-decoration: none;
+}
+
+.about-tab-desc a {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 0 10px;
+    text-decoration: none;
+    border-radius: 15px 8px;
+    background: linear-gradient(45deg, rgba(226, 113, 14, 0.9), rgba(226, 124, 14, 0.9));
+    padding: 8px 15px;
+    transition: all ;
+}
+
+.about-tab-desc a:hover {
+    background: linear-gradient(45deg, rgba(205, 103, 14, 0.9), rgba(197, 108, 13, 0.9));
+}
+
+.about-tab-desc a img {
+    margin: auto 0;
+    width: 40px;
+    height: auto;
 }
 
 .about-social {
@@ -214,11 +239,11 @@ header span {
         max-width: 600px;
         padding: 25px 20px;
     }
-    .about-tab span {
+    .about-tab span, .about-tab p {
         text-align: center;
     }
-    .about-tab p {
-        text-align: center;
+    .about-tab-desc a{
+        margin: 0 auto;
     }
     .about-social {
         padding-top: 10px;
