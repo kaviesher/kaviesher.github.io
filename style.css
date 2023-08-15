@@ -246,3 +246,92 @@ header span {
         padding-bottom: 5px;
     }
 }
+
+
+/* JS Addition Page */
+
+.js-add {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.js-add-title {
+    padding-top: 100px;
+    font-family: Roboto;
+    font-size: 30px;
+    padding: 35px 40px;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+    text-align: center;
+}
+
+.js-add-tab {
+    background: linear-gradient(45deg, rgba(255, 138, 60, 0.8), rgba(255, 160, 87, 0.8));
+    backdrop-filter: blur(6px);
+    padding: 25px 40px; 
+    border-radius: 50px 10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    max-width: 800px;
+    margin: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.js-add-tab-title {
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    color: white;
+    grid-area: a;
+}
+
+.calculator input {
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    font-family: Roboto Mono;
+    font-size: 14px;
+}
+
+.calculator span {
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 0 2px;
+}
+
+.calculator button {
+    display: block;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 14px;
+    background: whitesmoke;
+}
+
+.calculator button:active {
+    background: rgb(228, 228, 228);
+}
+
+@media screen and (max-width: 700px) {
+    .js-add-tab {
+        padding: 25px 50px;
+    }
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .calculator button {
+        margin-top: 20px;
+    }
+}
