@@ -322,8 +322,6 @@ header span {
     transition: all .3s ease;
 }
 
-/* */
-
 .calculator button:hover {
     background: rgb(9, 115, 181);
 }
