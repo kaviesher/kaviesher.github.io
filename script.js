@@ -45,7 +45,6 @@ scrollBg.forEach(function(element) {
 
 
 
-
 // Calculator
 function addition() {
     var num1 = parseFloat(document.getElementById("num1").value);
