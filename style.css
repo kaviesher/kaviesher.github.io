@@ -304,7 +304,16 @@ header span {
 .calculator span {
     font-family: Roboto;
     font-size: 18px;
-    padding: 0 2px;
+    margin: 0 8px;
+}
+
+.calculator select {
+    font-size: 18px;
+    margin: 0 8px;
+    border: none;
+    width: 35px;
+    background: none;
+    outline: none;
 }
 
 .calculator button {
@@ -338,6 +347,10 @@ header span {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .calculator select, .calculator span {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .calculator button {
         margin-top: 20px;

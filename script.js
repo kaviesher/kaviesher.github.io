@@ -50,10 +50,27 @@ scrollBg.forEach(function(element) {
 function addition() {
     var num1 = parseFloat(document.getElementById("num1").value);
     var num2 = parseFloat(document.getElementById("num2").value);
+    var sign = document.getElementById("calc-sign").value;
 
     if (!isNaN(num1) && !isNaN(num2)) {
-        var sum = num1 + num2;
-        document.getElementById("result").value = sum;
+        switch(sign) {
+            case "add":
+                var sum = num1 + num2;
+                document.getElementById("result").value = sum;
+                break;
+            case "sub":
+                var sum = num1 - num2;
+                document.getElementById("result").value = sum;
+                break;
+            case "mul":
+                var sum = num1 * num2;
+                document.getElementById("result").value = sum;
+                break;
+            case "div":
+                var sum = num1 / num2;
+                document.getElementById("result").value = sum;
+                break;
+        }
     } else {
         document.getElementById("result").value = "Error :(";
     }
