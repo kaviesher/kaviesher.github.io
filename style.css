@@ -42,7 +42,7 @@ html {
 header {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     position: fixed;
     padding: 12px 0px;
     width: 100%;
@@ -61,6 +61,22 @@ header span {
     letter-spacing: 2px;
 }
 
+header i {
+    color: white;
+    font-size: 20px;
+    margin-right: 5%;
+    border: solid 2px white;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+header i:hover {
+    background-color: pink;
+    background: rgba(255, 16, 156, 0.4);
+    border-color: rgba(255, 16, 156, 0.4);
+    backdrop-filter: blur(5px);
+}
 
 
 
