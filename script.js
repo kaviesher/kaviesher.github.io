@@ -45,32 +45,51 @@ scrollBg.forEach(function(element) {
 
 
 
-// Calculator
-function addition() {
+// Calculater
+function calculate() {
     var num1 = parseFloat(document.getElementById("num1").value);
     var num2 = parseFloat(document.getElementById("num2").value);
+    var result = document.getElementById("result");
     var sign = document.getElementById("calc-sign").value;
 
     if (!isNaN(num1) && !isNaN(num2)) {
         switch(sign) {
             case "add":
-                var sum = num1 + num2;
-                document.getElementById("result").value = sum;
+                result.value = num1 + num2;
                 break;
             case "sub":
-                var sum = num1 - num2;
-                document.getElementById("result").value = sum;
+                result.value = num1 - num2;
                 break;
             case "mul":
-                var sum = num1 * num2;
-                document.getElementById("result").value = sum;
+                result.value = num1 * num2;
                 break;
             case "div":
-                var sum = num1 / num2;
-                document.getElementById("result").value = sum;
+                result.value = num1 / num2;
                 break;
         }
     } else {
-        document.getElementById("result").value = "Error :(";
+        result.value = "Error :(";
     }
+}
+
+function clearInputs() {
+    var num1 = document.getElementById("num1");
+    var num2 = document.getElementById("num2");
+    var result = document.getElementById("result");
+
+    num1.value = "";
+    num2.value = "";
+    result.value = "";
+}
+
+function swapInputs() {
+    var num1 = document.getElementById("num1");
+    var num2 = document.getElementById("num2");
+    var result = document.getElementById("result");
+    var temp;
+
+    temp = num1.value;
+    num1.value = num2.value;
+    num2.value = temp;
+    result.value = "";
 }

@@ -245,22 +245,23 @@ header span {
 }
 
 
-/* JS Addition Page */
 
-.js-add {
+/* JS Calculater Page */
+
+.js-calc {
     min-height: 100vh;
     position: relative;
     z-index: 1;
 }
 
-.js-add-content {
+.js-calc-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 40px;   
 }
 
-.js-add-title {
+.js-calc-title {
     margin-top: 100px;
     font-family: Roboto;
     font-size: 30px;
@@ -269,7 +270,7 @@ header span {
     text-align: center;
 }
 
-.js-add-tab {
+.js-calc-tab {
     background: linear-gradient(45deg, rgba(255, 138, 60, 0.8), rgba(255, 160, 87, 0.8));
     backdrop-filter: blur(6px);
     padding: 25px 40px; 
@@ -283,11 +284,16 @@ header span {
     padding-bottom: 40px;
 }
 
-.js-add-tab-title {
+.js-calc-tab-title {
     font-family: Roboto Condensed;
     font-size: 24px;
     color: white;
     grid-area: a;
+}
+
+.calc-inputs {
+    display: flex;
+    align-items: center;
 }
 
 .calculator input {
@@ -316,10 +322,18 @@ header span {
     outline: none;
 }
 
+.calc-btns {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 24px;
+}
+
+.calc-btns button:last-child {
+    margin-left: auto;
+}
+
 .calculator button {
-    display: block;
     border: none;
-    margin-top: 18px;
     padding: 12px 22px;
     cursor: pointer;
     font-family: Roboto;
@@ -340,19 +354,21 @@ header span {
 }
 
 @media screen and (max-width: 700px) {
-    .js-add-tab {
+    .js-calc-tab {
         padding: 25px 50px;
     }
-    .calculator {
-        display: flex;
+    .calc-inputs {
         flex-direction: column;
-        align-items: center;
     }
     .calculator select, .calculator span {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .calculator button {
-        margin-top: 20px;
+    .calc-btns {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .calc-btns button:last-child {
+        margin-left: 0;
     }
 }

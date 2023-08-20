@@ -56,26 +56,31 @@
 
 
             <!-- JS Addition Page -->
-            <div class="js-add">
+            <div class="js-calc">
                 <div class="home-styles-second" id="home-styles-second"></div>
 
-                <div class="js-add-content">
-                    <p class="js-add-title">A Simple Calculater</p>
-                    <div class="js-add-tab">
-                        <p class="js-add-tab-title">Try it out!</p>
+                <div class="js-calc-content">
+                    <p class="js-calc-title">A Simple Calculater</p>
+                    <div class="js-calc-tab">
+                        <p class="js-calc-tab-title">Try it out!</p>
                         <div class="calculator">
-                            <input type="text" id="num1">
-                            <select id="calc-sign">
-                                <option value="add">+</option>
-                                <option value="sub">-</option>
-                                <option value="mul">x</option>
-                                <option value="div">/</option>
-                            </select>
-                            <!--<span>+</span>-->
-                            <input type="text" id="num2">
-                            <span>=</span>
-                            <input type="text" id="result" readonly>
-                            <button onclick="addition()">Calculate</button>
+                            <div class="calc-inputs">
+                                <input type="text" id="num1">
+                                <select id="calc-sign">
+                                    <option value="add">+</option>
+                                    <option value="sub">-</option>
+                                    <option value="mul">x</option>
+                                    <option value="div">/</option>
+                                </select>
+                                <input type="text" id="num2">
+                                <span>=</span>
+                                <input type="text" id="result" readonly>
+                            </div>
+                            <div class="calc-btns">
+                                <button onclick="clearInputs()">Clear</button>
+                                <button onclick="swapInputs()">Swap</button>
+                                <button onclick="calculate()">Calculate</button>
+                            </div>
                         </div>
                     </div>
                 </div>
