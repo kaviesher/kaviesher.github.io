@@ -99,6 +99,7 @@ function swapInputs() {
 
 // Dark Mode
 function darkMode() {
+    alert("Dark mode is still under development!");
     var mainBg = document.getElementById('home-styles');
     var scrollBg = document.querySelectorAll('#home-styles-second');
     var scrollBgClassName;
