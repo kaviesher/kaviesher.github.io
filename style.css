@@ -144,6 +144,14 @@ header i {
     opacity: 1;
 }
 
+@media screen and (max-width: 500px) {
+    header span {
+        font-size: 26px;
+    }
+    .night-btn {
+        transform: scale(80%);
+    }
+}
 
 
 
@@ -189,6 +197,19 @@ header i {
     color: white;
     font-size: 25px;
     text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .main-title-and-caption {
+        padding: 32px 44px;
+    }
+    .main-title-and-caption h1 {
+        font-size: 36px;
+    }
+    .main-title-and-caption h2 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
 }
 
 
@@ -329,6 +350,9 @@ header i {
     grid-area: about-d;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
 }
 
 .about-social p {
@@ -337,8 +361,10 @@ header i {
     font-size: 16px;
     color: rgb(8, 8, 8);
     padding: 5px;
-    word-wrap: break-word;
-    white-space: pre-wrap;
+}
+
+.about-social i {
+    font-size: 16px;
 }
 
 @media screen and (max-width: 900px) {
@@ -364,6 +390,21 @@ header i {
     .my-name-tooltip {
         top: -80%;
         left: -75px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-me span {
+        font-size: 26px;
+    }
+    .about-tab-title {
+        font-size: 22px;
+    }
+    .about-tab-desc-para {
+        font-size: 18px;
+    }
+    .about-social p, .about-social i {
+        font-size: 12px;
     }
 }
 
@@ -492,5 +533,21 @@ header i {
     }
     .calc-btns button:last-child {
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .js-calc-title {
+        font-size: 26px;
+    }
+    .js-calc-tab-title {
+        font-size: 22px;
+    }
+    .calculator input {
+        font-size: 13px;
+    }
+    .calculator button {
+        font-size: 13px;
+        padding: 10px 0;
     }
 }
