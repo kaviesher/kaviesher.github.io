@@ -33,6 +33,9 @@ html {
     scroll-behavior: smooth;
 }
 
+link[rel="icon"] img {
+    border-radius: 50%;
+}
 
 
 

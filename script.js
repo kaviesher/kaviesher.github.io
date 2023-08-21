@@ -99,5 +99,13 @@ function swapInputs() {
 
 // Dark Mode
 function darkMode() {
-    alert("Dark mode is still under development. It will be available soon.");
+    var mainBg = document.getElementById('home-styles');
+    if (mainBg.className == "home-styles") {
+        mainBg.classList.remove("home-styles");
+        mainBg.classList.toggle("home-styles-dark");
+    }
+    else if (mainBg.className == "home-styles-dark") {
+        mainBg.classList.remove("home-styles-dark");
+        mainBg.classList.toggle("home-styles");
+    }
 }
