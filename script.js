@@ -93,3 +93,11 @@ function swapInputs() {
     num2.value = temp;
     result.value = "";
 }
+
+
+
+
+// Dark Mode
+function darkMode() {
+    alert("Dark mode is still under development. It will be available soon.");
+}
