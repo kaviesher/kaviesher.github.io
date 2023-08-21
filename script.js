@@ -120,7 +120,7 @@ function darkMode() {
         });
         // Page Topic Font Change
         pageTopics.forEach(function(element) {
-            element.classList.remove("page-topic");
+            element.classList.remove("page-topic-light");
             element.classList.add("page-topic-dark");
         });
     }
@@ -135,7 +135,7 @@ function darkMode() {
         // Page Topic Font Change
         pageTopics.forEach(function(element) {
             element.classList.remove("page-topic-dark");
-            element.classList.add("page-topic");
+            element.classList.add("page-topic-light");
         });
     }
 }
