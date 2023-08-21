@@ -337,6 +337,8 @@ header i {
     font-size: 16px;
     color: rgb(8, 8, 8);
     padding: 5px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 @media screen and (max-width: 900px) {
@@ -358,6 +360,10 @@ header i {
     .about-social {
         padding-top: 10px;
         padding-bottom: 5px;
+    }
+    .my-name-tooltip {
+        top: -80%;
+        left: -75px;
     }
 }
 
