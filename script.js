@@ -99,13 +99,15 @@ function swapInputs() {
 
 // Dark Mode
 function darkMode() {
+    // BG Elements
     var mainBg = document.getElementById('home-styles');
     var scrollBg = document.querySelectorAll('#home-styles-second');
     var scrollBgClassName;
     scrollBg.forEach(function(element) {
         scrollBgClassName = element.className;
     });
-
+    
+    // Page Topics
     var pageTopics = document.querySelectorAll("#page-topic");
 
     if (mainBg.className == "home-styles") {
@@ -116,7 +118,7 @@ function darkMode() {
             element.classList.remove("home-styles-second");
             element.classList.add("home-styles-second-dark");
         });
-        // Topic Font Change
+        // Page Topic Font Change
         pageTopics.forEach(function(element) {
             element.classList.remove("page-topic");
             element.classList.add("page-topic-dark");
@@ -130,7 +132,7 @@ function darkMode() {
             element.classList.remove("home-styles-second-dark");
             element.classList.add("home-styles-second");
         });
-        // Topic Font Change
+        // Page Topic Font Change
         pageTopics.forEach(function(element) {
             element.classList.remove("page-topic-dark");
             element.classList.add("page-topic");

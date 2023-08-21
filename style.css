@@ -246,27 +246,62 @@ header i {
     border-radius: 20px;
 }
 
-.about-tab span {
+.about-tab-title {
     font-family: Roboto Condensed;
     font-size: 24px;
     color: white;
     grid-area: about-a;
 }
 
-.about-tab p, .about-tab p span {
+.about-tab-desc {
+    grid-area: about-c;
+}
+
+.about-tab-desc-para {
     font-family: Roboto Condensed;
     font-size: 19px;
     line-height: 30px;
     color: rgb(238, 238, 238);
 }
 
-.about-tab-desc {
-    grid-area: about-c;
-}
-
-.about-tab-desc p span {
+.about-tab-desc-my-name {
     color: rgb(24, 24, 24);
     text-decoration: none;
+    position: relative;
+    border-bottom: dotted rgb(24, 24, 24) 2px;
+}
+
+.my-name-tooltip {
+    visibility: hidden;
+    position: absolute;
+    left: auto;
+    right: auto;
+    width: max-content;
+    background-color: rgba(25, 25, 25, 0.7);
+    color: whitesmoke;
+    font-size: 12px;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    border-radius: 10px;
+    top: -160%;
+    left: -28px;
+    backdrop-filter: blur(10px);
+}
+
+.my-name-tooltip::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 45%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(25, 25, 25, 0.7) transparent transparent transparent;
+    backdrop-filter: blur(10px);
+}
+
+.about-tab-desc-my-name:hover .my-name-tooltip {
+    visibility: visible;
 }
 
 .about-tab-desc a {
@@ -314,7 +349,7 @@ header i {
         max-width: 600px;
         padding: 25px 20px;
     }
-    .about-tab span, .about-tab p {
+    .about-tab-desc-para {
         text-align: center;
     }
     .about-tab-desc a{
