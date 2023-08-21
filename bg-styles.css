@@ -407,35 +407,3 @@
     left: 43.936vh;
     top: 90vh;
 }
-
-
-
-
-
-
-/* Dark Mode */
-.home-styles-dark {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(180deg, rgb(51, 43, 56), rgb(47, 41, 59)) fixed;
-    z-index: 0;
-    overflow: hidden;
-}
-
-.home-styles-dark div {
-    position: absolute;
-    border: solid 0.426vh rgba(145, 84, 109, 0.4);
-    background: none;
-    transition: transform 0.2s ease;
-}
-
-.home-styles-dark div:hover {
-    transform: rotate(0deg);
-}
-
-.home-styles-dark #grey {
-    display: none;
-}

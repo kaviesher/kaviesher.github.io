@@ -100,12 +100,25 @@ function swapInputs() {
 // Dark Mode
 function darkMode() {
     var mainBg = document.getElementById('home-styles');
-    if (mainBg.className == "home-styles") {
+    var scrollBg = document.querySelectorAll('#home-styles-second');
+    var scrollBgClassName;
+    scrollBg.forEach(function(element) {
+        scrollBgClassName = element.className;
+    });
+    if (mainBg.className == "home-styles" && scrollBgClassName == "home-styles-second") {
         mainBg.classList.remove("home-styles");
         mainBg.classList.toggle("home-styles-dark");
+        scrollBg.forEach(function(element) {
+            element.classList.remove("home-styles-second");
+            element.classList.toggle("home-styles-second-dark");
+        });
     }
     else if (mainBg.className == "home-styles-dark") {
         mainBg.classList.remove("home-styles-dark");
         mainBg.classList.toggle("home-styles");
+        scrollBg.forEach(function(element) {
+            element.classList.remove("home-styles-second-dark");
+            element.classList.toggle("home-styles-second");
+        });
     }
 }
