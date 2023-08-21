@@ -99,7 +99,6 @@ function swapInputs() {
 
 // Dark Mode
 function darkMode() {
-    alert("Dark mode is still under development!");
     var mainBg = document.getElementById('home-styles');
     var scrollBg = document.querySelectorAll('#home-styles-second');
     var scrollBgClassName;
@@ -107,6 +106,7 @@ function darkMode() {
         scrollBgClassName = element.className;
     });
     if (mainBg.className == "home-styles" && scrollBgClassName == "home-styles-second") {
+        alert("Dark mode is still under development!");
         mainBg.classList.remove("home-styles");
         mainBg.classList.toggle("home-styles-dark");
         scrollBg.forEach(function(element) {
