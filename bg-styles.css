@@ -407,3 +407,10 @@
     left: 43.936vh;
     top: 90vh;
 }
+
+
+@media screen and (max-width: 500px) {
+    .home-styles div, .home-styles-second div {
+        scale: 90%;
+    }
+}

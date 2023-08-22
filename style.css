@@ -149,7 +149,7 @@ header i {
         font-size: 26px;
     }
     .night-btn {
-        transform: scale(80%);
+        scale: 80%;
     }
 }
 
@@ -204,7 +204,7 @@ header i {
         padding: 32px 44px;
     }
     .main-title-and-caption h1 {
-        font-size: 36px;
+        font-size: 38px;
     }
     .main-title-and-caption h2 {
         font-size: 22px;
@@ -395,7 +395,7 @@ header i {
 
 @media screen and (max-width: 500px) {
     .about-me span {
-        font-size: 26px;
+        font-size: 28px;
     }
     .about-tab-title {
         font-size: 22px;
@@ -404,7 +404,7 @@ header i {
         font-size: 18px;
     }
     .about-social p, .about-social i {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -538,7 +538,7 @@ header i {
 
 @media screen and (max-width: 500px) {
     .js-calc-title {
-        font-size: 26px;
+        font-size: 28px;
     }
     .js-calc-tab-title {
         font-size: 22px;

@@ -52,3 +52,10 @@
     background: none;
     transition: transform 0.2s ease;
 }
+
+
+@media screen and (max-width: 500px) {
+    .home-styles-dark div, .home-styles-second-dark div {
+        scale: 90%;
+    }
+}
