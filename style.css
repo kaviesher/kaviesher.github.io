@@ -46,7 +46,9 @@ link[rel="icon"] img {
     color: rgb(37, 37, 37);
 }
 
-
+.transition {
+    transition: all .3s ease;
+}
 
 
 

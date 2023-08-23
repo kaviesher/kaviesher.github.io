@@ -112,30 +112,30 @@ function darkMode() {
 
     if (mainBg.className == "home-styles") {
         // BG Change
-        mainBg.classList.remove("home-styles");
-        mainBg.classList.add("home-styles-dark");
+        mainBg.classList.toggle("home-styles");
+        mainBg.classList.toggle("home-styles-dark");
         scrollBg.forEach(function(element) {
-            element.classList.remove("home-styles-second");
-            element.classList.add("home-styles-second-dark");
+            element.classList.toggle("home-styles-second");
+            element.classList.toggle("home-styles-second-dark");
         });
         // Page Topic Font Change
         pageTopics.forEach(function(element) {
-            element.classList.remove("page-topic-light");
-            element.classList.add("page-topic-dark");
+            element.classList.toggle("page-topic-light");
+            element.classList.toggle("page-topic-dark");
         });
     }
     else if (mainBg.className == "home-styles-dark") {
         // BG Change
-        mainBg.classList.remove("home-styles-dark");
-        mainBg.classList.add("home-styles");
+        mainBg.classList.toggle("home-styles-dark");
+        mainBg.classList.toggle("home-styles");
         scrollBg.forEach(function(element) {
-            element.classList.remove("home-styles-second-dark");
-            element.classList.add("home-styles-second");
+            element.classList.toggle("home-styles-second-dark");
+            element.classList.toggle("home-styles-second");
         });
         // Page Topic Font Change
         pageTopics.forEach(function(element) {
-            element.classList.remove("page-topic-dark");
-            element.classList.add("page-topic-light");
+            element.classList.toggle("page-topic-dark");
+            element.classList.toggle("page-topic-light");
         });
     }
 }
